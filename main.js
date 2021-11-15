@@ -35,7 +35,12 @@ function playStream(idAudioTag, stream) {
     audio.play();
 }
 
-const peer = new Peer();
+const peer = new Peer({ 
+    key: 'peerjs',
+    host: 'peerprojectnhom4.herokuapp.com',
+    secure: true,
+    port: 443
+});
 
 peer.on('open', id => {
     $('#my-peer').append(id)

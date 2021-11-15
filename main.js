@@ -25,14 +25,14 @@ socket.on('DANG_KY_THAT_BAT', () => alert('Vui long chon username khac!'));
 
 
 function openStream() {
-    const config = { audio: true, video: true };
+    const config = { audio: false, video: true };
     return navigator.mediaDevices.getUserMedia(config);
 }
 
-function playStream(idAudioTag, stream) {
-    const audio = document.getElementById(idAudioTag);
-    audio.srcObject = stream;
-    audio.play();
+function playStream(idVideoTag, stream) {
+    const video = document.getElementById(idVideoTag);
+    video.srcObject = stream;
+    video.play();
 }
 
 const peer = new Peer({ 

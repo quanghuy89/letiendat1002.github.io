@@ -1,26 +1,3 @@
-const express = require('express');
-const request = require('request');
-
-const app = express();
-
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
-  next();
-});
-
-// app.get('', (req, res) => {
-//   request(
-//     { url: 'https://letiendat1002.github.io/' },
-//     (error, response, body) => {
-//       if (error || response.statusCode !== 200) {
-//         return res.status(500).json({ type: 'error', message: err.message });
-//       }
-
-//       res.json(JSON.parse(body));
-//     }
-//   )
-// });
-
 const socket = io('https://streamprojectnhom4.herokuapp.com/');
 
 $('#div-chat').hide();

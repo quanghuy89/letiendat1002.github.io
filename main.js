@@ -8,18 +8,18 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('', (req, res) => {
-  request(
-    { url: 'https://letiendat1002.github.io/' },
-    (error, response, body) => {
-      if (error || response.statusCode !== 200) {
-        return res.status(500).json({ type: 'error', message: err.message });
-      }
+// app.get('', (req, res) => {
+//   request(
+//     { url: 'https://letiendat1002.github.io/' },
+//     (error, response, body) => {
+//       if (error || response.statusCode !== 200) {
+//         return res.status(500).json({ type: 'error', message: err.message });
+//       }
 
-      res.json(JSON.parse(body));
-    }
-  )
-});
+//       res.json(JSON.parse(body));
+//     }
+//   )
+// });
 
 const socket = io('https://streamprojectnhom4.herokuapp.com/');
 

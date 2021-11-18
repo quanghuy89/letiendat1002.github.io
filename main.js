@@ -50,6 +50,16 @@ peer.on('open', id => {
     });
 });
 
+$('#ulUser').on('click', 'li', function() {
+    const id = $(this).attr('id');
+    openStream()
+    .then(stream => {
+        //playStream('localStream', stream);
+        const call = peer.call(id, stream);
+        call.on('stream', remoteStream => playStream('remoteStream', remoteStream));
+    });
+});
+
 // Caller
 $('#btnCall').on("click",() => {
     const id = $('#remoteId').val();
@@ -67,17 +77,6 @@ peer.on('call', call => {
     .then(stream => {
         call.answer(stream);
         //playStream('localStream', stream);
-        call.on('stream', remoteStream => playStream('remoteStream', remoteStream));
-    });
-});
-
-$('#ulUser').on('click', 'li', function() {
-    const id = $(this).attr('id');
-    //console.log(id);
-    openStream()
-    .then(stream => {
-        //playStream('localStream', stream);
-        const call = peer.call(id, stream);
         call.on('stream', remoteStream => playStream('remoteStream', remoteStream));
     });
 });

@@ -1,4 +1,4 @@
-const socket = io('https://streamprojectnhom4.herokuapp.com/');
+const socket = io('https://streamprojectnhom4.herokuapp.com/', {transports: ['websocket', 'polling', 'flashsocket']});
 
 $('#div-chat').hide();
 
@@ -44,7 +44,7 @@ const peer = new Peer({
 
 peer.on('open', id => {
     $('#my-peer').append(id)
-    $('#btnSignUp').click(() => {
+    $('#btnSignUp').on("click", () => {
         const username = $('#txtUsername').val();
         socket.emit('NGUOI_DUNG_DANG_KY', { ten: username, peerId: id });
     });
@@ -81,4 +81,3 @@ $('#ulUser').on('click', 'li', function() {
         call.on('stream', remoteStream => playStream('remoteStream', remoteStream));
     });
 });
-

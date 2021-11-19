@@ -1,7 +1,7 @@
-//const socket = io('https://streamprojectnhom4.herokuapp.com/', {transports: ['websocket', 'polling', 'flashsocket']});
+const socket = io('https://streamprojectnhom4.herokuapp.com/', {transports: ['websocket', 'polling', 'flashsocket']});
 //const socket = io('https://streamprojectnhom4.herokuapp.com/', {transports: ['websocket']});
 
-const socket = io('https://streamprojectnhom4.herokuapp.com/');
+//const socket = io('https://streamprojectnhom4.herokuapp.com/');
 
 $('#div-chat').hide();
 

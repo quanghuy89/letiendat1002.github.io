@@ -1,5 +1,7 @@
 //const socket = io('https://streamprojectnhom4.herokuapp.com/', {transports: ['websocket', 'polling', 'flashsocket']});
-const socket = io('https://streamprojectnhom4.herokuapp.com/', {transports: ['websocket']});
+//const socket = io('https://streamprojectnhom4.herokuapp.com/', {transports: ['websocket']});
+
+const socket = io('https://streamprojectnhom4.herokuapp.com/');
 
 $('#div-chat').hide();
 
@@ -51,6 +53,7 @@ peer.on('open', id => {
     });
 });
 
+// Thuc hien cuoc goi bang click ten
 $('#ulUser').on('click', 'li', function() {
     const id = $(this).attr('id');
     openStream()

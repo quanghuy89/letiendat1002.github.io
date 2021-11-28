@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Group 4 Audio Call</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link rel="icon" type="image/gif" href="favicon/animated_favicon1.gif">
+    <script src="jquery.js"></script>
+    <script src="peer.js"></script>
+    <script src="socket.io.js"></script>
+</head>
+
+<body>
+    <div id="div-chat">
+        <p>Online user:</p>
+        <ul id="ulUser">
+        </ul>
+        <audio id="remoteStream" controls></audio>
+        <br /><br />
+        <h3 id="my-peer">Your Id: </h3>
+        <input type="text" id="remoteId" placeholder="Remote ID">
+        <button id="btnCall">Call</button>
+    </div>
+    <div id="div-dang-ky">
+        <br /><br />
+        <input type="text" id="txtUsername" placeholder="Enter your username">
+        <button id="btnSignUp">Sign Up</button>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>

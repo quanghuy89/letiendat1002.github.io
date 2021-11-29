@@ -3,8 +3,8 @@
 
 /* body{background-image: 1.jpeg; background-size: 100%;} */
 audio{
-    background-color:white;
-    margin-left: 300px;
+/*     background-color:white; */
+    
     margin-top: 100px;
 }
 #txtUsername{background-color: #fdfdfc; border: solid 1px black}
@@ -12,6 +12,10 @@ audio{
     color: cornsilk;
     background-color: rgb(7, 121, 121);
     /* margin-top: 200px; */
+}
+
+h1{
+    margin-right :500px;
 }
 p{
     font-variant:small-caps;
@@ -25,11 +29,11 @@ ul{
     color: green;
     position: relative; 
     top: 25px;
-    margin-right: 100px;
+    
 }
 h3{
     color: black;
-    margin-left: 300px;
+    
     position: relative; 
     bottom: 50px;
     margin-top: 150px;
@@ -41,7 +45,7 @@ h3{
     bottom: 400px;
 }
 #remoteId{
-    margin-left: 300px;
+    
     margin-top: 350px;
     position: relative;
     bottom: 400px;

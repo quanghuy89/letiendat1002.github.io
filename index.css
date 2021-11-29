@@ -1,0 +1,48 @@
+ body{background-image: url(https://wallpapershome.com/images/pages/pic_h/23841.jpeg); background-size: 100%;} 
+
+
+/* body{background-image: 1.jpeg; background-size: 100%;} */
+audio{
+    background-color:black;
+    margin-left: 300px;
+    margin-top: 100px;
+}
+#txtUsername{background-color: #fdfdfc; border: solid 1px black}
+#btnSignUp{
+    color: cornsilk;
+    background-color: rgb(7, 121, 121);
+    /* margin-top: 200px; */
+}
+p{
+    font-variant:small-caps;
+    color:white;
+    position: relative; 
+    top: 25px;
+    margin-right: 100px;
+    font-size : 20px;
+}
+ul{
+    color: lightgreen;
+    position: relative; 
+    top: 25px;
+    margin-right: 100px;
+}
+h3{
+    color: white;
+    margin-left: 300px;
+    position: relative; 
+    bottom: 50px;
+    margin-top: 150px;
+}
+#btnCall{
+    color: white;
+    background-color: blue;
+    position: relative;
+    bottom: 400px;
+}
+#remoteId{
+    margin-left: 300px;
+    margin-top: 350px;
+    position: relative;
+    bottom: 400px;
+}
